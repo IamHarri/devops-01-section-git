@@ -28,6 +28,9 @@ jobs:
       # Runs a single command using the runners shell
       - name: build image
         run: docker build -t longlc3/devops01:latest .
+      
+      - name: build image
+        run: docker login -u longlc3 -p Harry@272707577
 
       - name: push image
         run: docker push longlc3/devops01:latest
